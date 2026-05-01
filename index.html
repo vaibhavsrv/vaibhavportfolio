@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vaibhav — portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects"     onclick="closeMobileMenu()">Projects</a>
+    <a href="#achievements" onclick="closeMobileMenu()">Achievements</a>
+    <a href="#platforms"    onclick="closeMobileMenu()">Platforms</a>
+    <a href="#resume"       onclick="closeMobileMenu()">Resume</a>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">Portfolio</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#platforms">Platforms</a>
+    </nav>
+    <button class="hamburger" id="menuBtn" aria-label="Menu" onclick="toggleMenu()" style="background:none;border:none;cursor:none;">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    
+    <!-- !!! UPDATED LEFT COLUMN !!! -->
+    <div class="hero-left">
+      <!-- Your new name block -->
+      <h1 class="hero-name-huge">
+        VAIBHAV<br>
+        SRIVASTAVA
+      </h1>
+      
+      <!-- Your existing build word -->
+      <div class="hero-word"><span>build.</span></div>
+    </div>
+    <!-- !!! ------------------- !!! -->
+    
+    <div class="hero-right">
+      <div class="profile-pic-container">
+        <img src="./assets/vaibhav.png" alt="Vaibhav Srivastava" class="profile-pic" />
+      </div>
+      <!-- !!! ----------------------------- !!! -->
+
+      <p class="hero-tag">Frontend Developer &amp; CS Engineer</p>
+      <p class="hero-sub">
+        Pre-final year CS student at Galgotias University. Frontend intern at Infosys Springboard — shipping React dashboards, wiring REST APIs, and asking the right questions before writing a single line of code.
+      </p>
+      <div class="hero-skills">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">React.js</span>
+        <span class="skill-pill">Node.js</span>
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">GitHub</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">and some core concepts</span>
+      </div>
+    </div>
+    
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">scroll</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label">Selected Work</p>
+    <div class="projects-grid">
+
+      <!-- Card 1 — Cura -->
+<a class="project-card reveal" href="https://cura-your-caring-companion.vercel.app/" target="_blank" rel="noopener">
+  <div class="card-img">
+    
+    <!-- 1. The SVG is gone, and your image is here instead -->
+    <img src="./assets/cura.png" alt="Cura Health Portal" class="project-image" />
+    
+    <!-- Leave these animation/overlay divs exactly as they are -->
+    <div class="card-img-zoom"></div>
+    <div class="card-img-inner"></div>
+    <div class="card-arrow">
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+  
+  <div class="card-body">
+    <div class="card-meta">
+      <p class="card-type">Full-Stack · React.js / Node.js / MySQL</p>
+      <h3 class="card-title">Cura<br>— Health Portal /01</h3>
+      <p class="card-desc">Multi-role patient health platform for patients, doctors, and pharmacists with JWT auth, protected routing, and real-time role-specific dashboards.</p>
+    </div>
+    <span class="card-link-label">View live →</span>
+  </div>
+</a>
+
+      <!-- Card 2 — DevFolio -->
+      <a class="project-card reveal" href="https://devfolio-three-mu.vercel.app/" target="_blank" rel="noopener" style="transition-delay:0.1s">
+        <div class="card-img">
+          <img src="./assets/devfolio.png" alt="Cura Health Portal" class="project-image" />
+          <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+            <rect x="150" y="112" width="300" height="225" stroke="#000" stroke-width="0.5" fill="none"/>
+            <rect x="200" y="160" width="200" height="130" stroke="#000" stroke-width="0.5" fill="none"/>
+          </svg>
+          <div class="card-img-zoom"></div>
+          <div class="card-img-inner"></div>
+          <div class="card-arrow">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <p class="card-type">Full-Stack · React.js / Node.js / MongoDB</p>
+            <h3 class="card-title">DevFolio<br>— Portfolio Platform /02</h3>
+            <p class="card-desc">Platform where developers sign up, link GitHub or upload a resume, and auto-generate a personal portfolio page from stored profile data.</p>
+          </div>
+          <span class="card-link-label">View live →</span>
+        </div>
+      </a>
+
+      <!-- Card 3 — NOW AI CODE REVIEW (Small Box) -->
+<a class="project-card reveal" href="not available" target="_blank" rel="noopener" style="transition-delay:0.15s">
+  <div class="card-img">
+    <img src="./assets/ai-code-reviewer.png" alt="Cura Health Portal" class="project-image" />
+
+    <!-- Keep the Triangle SVG for the narrow box -->
+    <svg viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="250,50 450,380 50,380" stroke="#000" stroke-width="0.5" fill="none"/>
+      <line x1="50" y1="380" x2="450" y2="380" stroke="#000" stroke-width="0.5"/>
+    </svg>
+    <div class="card-img-zoom"></div>
+    <div class="card-img-inner"></div>
+    <div class="card-arrow">
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <p class="card-type">Hackathon · AI / Rapid Prototyping</p>
+      <h3 class="card-title">AI Code Review<br>— Hackathon /04</h3>
+      <p class="card-desc">AI-assisted code review tool built and shipped in 24 hours during a hackathon. Demonstrated rapid prototyping under pressure.</p>
+    </div>
+    <span class="card-link-label">Not live Yet →</span>
+  </div>
+</a>
+
+      <!-- Card 4 — NOW KYC DASHBOARD (Large Box) -->
+<a class="project-card reveal" href="https://github.com/vaibhavsrv/kyc-project.git" target="_blank" rel="noopener" style="transition-delay:0.2s">
+  <div class="card-img">
+    <img src="./assets/kyc-project.png" alt="Cura Health Portal" class="project-image" />
+    <!-- Keep the Concentric Circles SVG for the wide box (or add your image here!) -->
+    <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+      <!-- (Your template's existing circle SVG paths will be here) -->
+    </svg>
+    <div class="card-img-zoom"></div>
+    <div class="card-img-inner"></div>
+    <div class="card-arrow">
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <p class="card-type">Internship · React.js / REST APIs</p>
+      <h3 class="card-title">KYC Dashboard<br>— Infosys /03</h3>
+      <p class="card-desc">React components for KYC verification dashboards and document upload flows, wired to REST APIs for live case-status rendering. Shipped within Agile sprint cycles.</p>
+    </div>
+    <span class="card-link-label">View live →</span>
+  </div>
+</a>
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <p class="section-label">Milestones</p>
+    <ul class="achievements-list">
+
+      <li class="achievement-item">
+        <span class="achievement-year">2024</span>
+        <div>
+          <h3 class="achievement-title">Grades</h3>
+          <p class="achievement-detail">Recognised for academic excellence, maintaining a 8.45 CGPA across core CSEcoursework.</p>
+        </div>
+        <span class="achievement-badge">Academic</span>
+      </li>
+
+      <li class="achievement-item">
+        <span class="achievement-year">2024</span>
+        <div>
+          <h3 class="achievement-title">Hackathon — 14st Place</h3>
+          <p class="achievement-detail">Participated National-Level Hackathon with an AI-powered accessibility tool used by 500+ beta testers.</p>
+        </div>
+        <span class="achievement-badge">Competition</span>
+      </li>
+
+      <li class="achievement-item">
+        <span class="achievement-year">2025</span>
+        <div>
+          <h3 class="achievement-title">HackerRank Problem Solver</h3>
+          <p class="achievement-detail">Passed the HackerRank Certification Test – Associate certification, specialising in Data Structures and Algoithms.</p>
+        </div>
+        <span class="achievement-badge">Certification</span>
+      </li>
+
+      <li class="achievement-item">
+        <span class="achievement-year">2025</span>
+        <div>
+          <h3 class="achievement-title">Open Source — 10+ PRs</h3>
+          <p class="achievement-detail">Contributed to Open Source projects like Darp, Supabase, rysolv and many more ,40+ forks within six months.</p>
+        </div>
+        <span class="achievement-badge">Open Source</span>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- PLATFORMS -->
+  <section id="platforms">
+    <p class="section-label">Find Me On</p>
+    <div class="platforms-grid">
+
+      <a class="platform-link reveal" href="https://github.com/vaibhavsrv" target="_blank" rel="noopener">
+        <span class="platform-name">GitHub</span>
+        <div class="platform-meta">
+          <span class="platform-handle">@vaibhavsrv</span>
+          <span class="platform-arrow">↗</span>
+        </div>
+      </a>
+
+      <a class="platform-link reveal" href="https://leetcode.com/vaibhavsrv" target="_blank" rel="noopener" style="transition-delay:0.08s">
+        <span class="platform-name">LeetCode</span>
+        <div class="platform-meta">
+          <span class="platform-handle">@vaibhavsrv</span>
+          <span class="platform-arrow">↗</span>
+        </div>
+      </a>
+
+      <a class="platform-link reveal" href="https://linkedin.com/in/vaisrv" target="_blank" rel="noopener" style="transition-delay:0.16s">
+        <span class="platform-name">LinkedIn</span>
+        <div class="platform-meta">
+          <span class="platform-handle">/in/vaisrv</span>
+          <span class="platform-arrow">↗</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <h2 class="resume-label">Want the full picture?</h2>
+    <p class="resume-sub">A one-page summary of my experience, skills, and education — ready to download.</p>
+    <a class="btn-resume" href="https://drive.google.com/file/d/1xb2GyQlsCOeJUIxN4xJaxKaLvz552xIl/view?usp=share_link" download>
+      <span>Download Resume</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 4v12M6 14l6 6 6-6"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 vaibhav — all rights reserved</p>
+    <p>designed &amp; built with intention</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="main.js"></script>
+</body>
+</html>
